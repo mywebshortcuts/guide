@@ -8,12 +8,23 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'My Web Shortcuts Guide',
+  tagline: 'Usage guide for My Web Shortcuts Browser Extension',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  // url: 'https://your-docusaurus-site.example.com',
+
+  // title: '...',
+  url: `${process.env.URL}`, // You can use environment variables to control site specifics as well
+  customFields: {
+    // Put your custom environment here
+    teamEmail: process.env.EMAIL,
+    USE_SSH: true, 
+    GIT_USER_NAME: 'prakhartiwari0',
+
+  },
+
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
