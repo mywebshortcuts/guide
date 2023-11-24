@@ -13,16 +13,13 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  // url: 'https://your-docusaurus-site.example.com',
+  url: 'https://mywebshortcuts.xyz/',
 
   // title: '...',
-  url: `${process.env.URL}`, // You can use environment variables to control site specifics as well
+  // url: process.env.URL, // You can use environment variables to control site specifics as well
   customFields: {
     // Put your custom environment here
-    teamEmail: process.env.EMAIL,
     USE_SSH: true, 
-    GIT_USER_NAME: 'prakhartiwari0',
-
   },
 
   // Set the /<baseUrl>/ pathname under which your site is served
